@@ -9,5 +9,29 @@
     <h1>Archipelago</h1>
     <h2>A game made for CMPM 171 by Miles Marsh, Sean Rowley, Ewin Mathew, Mark Mcateer, and Samuel Liao</h2>
     <a href="Windows.zip" download>Prototype Demo Download Link (2/19/2024)</a>
+    <h2>Platform and Language Detection:</h2>
+    <button id="myBtn">
+        Get Info
+    </button>
+    <p id="info"></p>
+</div>
+
+    <script>
+        const myBtn = document.
+            getElementById('myBtn')
+        function getLanguages() {
+            const langs = navigator.languages;
+            console.log(navigator.userAgentData)
+            const browser = navigator.userAgentData;
+            const info = document.
+                getElementById('info');
+            info.innerHTML =
+                `Browser :<b>${browser}</b><br> Operating system: <br> Natural language: <b>${langs}</b>`;
+        }
+        myBtn.addEventListener('click', getLanguages);
+    </script>
+    <h2>Materials Archive Folder:</h2>
+    <a href="making.html">Making of</a> <br>
+    <a href="about.html">About the Team</a> <br>
 </body>
 </html>
