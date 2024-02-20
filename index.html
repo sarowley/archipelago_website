@@ -21,12 +21,17 @@
             getElementById('myBtn')
         function getLanguages() {
             const langs = navigator.languages;
-            console.log(navigator.userAgentData)
-            const browser = navigator.userAgentData;
+            const browser = navigator.userAgent
+            // const operating = navigator.userAgentData;
+            // Operating system:<b>${operating}</b> <br>
+            console.log(navigator.userAgent)
+            console.log(browser)
+            // console.log(navigator.userAgentData)
+            // console.log(operating)
             const info = document.
                 getElementById('info');
             info.innerHTML =
-                `Browser :<b>${browser}</b><br> Operating system: <br> Natural language: <b>${langs}</b>`;
+                `Browser and Operating system:<b>${browser}</b><br> Natural language: <b>${langs}</b>`;
         }
         myBtn.addEventListener('click', getLanguages);
     </script>
