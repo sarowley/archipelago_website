@@ -7,15 +7,18 @@
 </head>
 <script> 
     const langs = navigator.languages;
-    const browser = navigator.userAgent
+    const operating_system = navigator.userAgent
     console.log(langs)
-    console.log(browser)
+    console.log(operating_system)
 
     if (langs.includes("en-US") || langs.includes("en")){
         console.log("english user")
     }
-    if (browser.includes("Firefox")){
-        console.log("firefox user")
+    if (operating_system.includes("Windows")){
+        console.log("windows user")
+    }
+    if (operating_system.includes("Linux")){
+        console.log("linux user")
     }
 </script>
 <body style="background-color:#abc5d9;">
