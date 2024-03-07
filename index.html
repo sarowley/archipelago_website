@@ -5,47 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Archipelago</title>
 </head>
-<body>
+<script> 
+    const langs = navigator.languages;
+    const browser = navigator.userAgent
+    // console.log(langs)
+    // console.log(browser)
+
+    if (langs.includes("en-US") || langs.includes("en")){
+        console.log("english user")
+    }
+    if (browser.includes("Firefox")){
+        console.log("firefox user")
+    }
+</script>
+<body style="background-color:#abc5d9;">
     <h1>Archipelago</h1>
     <h2>A game made for CMPM 171 by Miles Marsh, Sean Rowley, Ewin Mathew, Mark Mcateer, and Samuel Liao</h2>
     Archipelago is a first person game made in Unreal Engine 5, where you fall from island to island fighting enemies. <br> 
     However, the only way you can move around the islands is by using your weapons to propel you in unique and intersting ways. <br>
     Can you claim the title of champion in the movement shooter without movement or shooting?<br>
     <br>
-    <a href="curr_build/Windows(2-26).zip" download>Prototype Demo Download Link (Windows) (2/26/2024)</a> <br> <br>
+    <a href="https://drive.google.com/file/d/1HnI0j1YTw5Zs0WOSvwqzhBKivj-ikOTb/view?usp=sharing" download>Prototype Demo Download Link (Windows) (3/5/2024)</a> <br> <br>
     To play our game, download the above link, unzip it, and click on the application named "Archipelago". <br>
     Controls: <br>
-    WASD - Movement (temporary for the demo)<br>
+    WASD - Movement<br>
+    Space - Jump <br>
     Mouse - Look around <br>
-    Left Click - Dash forward <br>
-    P - Pause the Game <br>
-    Esc - Quit the game <br>
-    <h2>Platform and Language Detection:</h2>
-    <button id="myBtn">
-        Get Info
-    </button>
-    <p id="info"></p>
+    Left Click - Basic Attack <br>
+    Right Click - Dash Attack <br>
+    Esc - Pause/Quit the game <br>
 </div>
-
-    <script>
-        const myBtn = document.
-            getElementById('myBtn')
-        function getLanguages() {
-            const langs = navigator.languages;
-            const browser = navigator.userAgent
-            // const operating = navigator.userAgentData;
-            // Operating system:<b>${operating}</b> <br>
-            console.log(navigator.userAgent)
-            console.log(browser)
-            // console.log(navigator.userAgentData)
-            // console.log(operating)
-            const info = document.
-                getElementById('info');
-            info.innerHTML =
-                `Browser and Operating system:<b>${browser}</b><br> Natural language: <b>${langs}</b>`;
-        }
-        myBtn.addEventListener('click', getLanguages);
-    </script>
     <h2>Materials Archive Folder:</h2>
     <a href="making.html">Making of</a> <br>
     <a href="old_versions.html">Previous Versions</a> <br>
