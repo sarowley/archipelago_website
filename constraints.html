@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>constraints</title>
+</head>
+<body style="background-color: #abc5d9">
+    <a href="index.html">Back to Main Page</a> <br />
+    <br /><br />
+    One Hand: <br>
+    The game must be playable and an enjoyable experience for someone using only a single hand.
+    We aimed to satisfy this constraint from the get go designing much of our gameplay around accessibility controls with one hand. The main actions, attack, dash, and walk, all are possible via the mouse. You can look around via mouse movement, left click is attack, hold left click is move forwards, and right click is dash. The only important button that is off the mouse is the pause button, which is used at a drastically reduced rate as the other actions. <br> <br>
+    Audio Independant: <br>
+    The game cannot have any audio dependent mechanics or exposition.
+    For all games the audio is a key component in producing an aesthetically pleasing experience. However, not all people get to experience sound the same, so we tried to make the game visually appealing and also filled with visual cues. For moments in our game that relay information via audio we also relay information visually. To help ingrain this mechanic into our design process we didn’t add audio to our game till very late in the process to make sure it is a fun and functional experience without it. <br><br>
+    Size: <br>
+    For an offline single player experience the game must be a 100mb size at the time of download.
+    For our vertical slice we have made sure not to add to many assets, or too complicated a level. Our models are very low poly and therefore very small and efficient. Our choice of Unreal Engine 5 was one that was counterintuitive towards this constraint however, we have managed work against the engine to keep the download size small. We have slimmed our experience to be a single level and we have reused as many assets as we could to still provide a visual distinction while also saving on space. On top of in editor changes we have implemented an installer called Inno Setup. It allows a user to add an executable file, along with a collection of folders full of assets and anything else necessary, into another executable file where it will be compressed, as well as walk you through the process of installing and downloading our game. <br><br>
+    Colorblind: <br>
+    The game must support features that accommodate different visual impairment.
+    Our first approach, and I believe the most important, is the art direction being very high contrast between objects. We have low poly models which have very flat and visually distinct shaders, making it easy to discern your environment clearly. There is very little visual noise in the textures which assists in making the models distinguishable. On top of these design decisions for the models and art direction, we implemented Unreal Engine 5’s colorblind shaders. These are toggleable settings in our game that apply a post processing effect to make certain colors more visually distinguishable for their respective type of color blindness. <br><br>
+    Languages: <br>
+    The game must support another language besides English and incorporate a system for adding more languages in the future.
+     We began the creation of our game knowing that we wanted very limited text in the game. Our game will not be conveying a story textually or have very complicated controls/interactions so we added only the words most important to our game. Our HUD has no words whatsoever opting for a more iconographic style of conveying information. We are using Unreal Engine 5’s built in internationalization and localization features to create a framework that allows us to support multiple languages and to add more in the future should the need arise.<br><br>
+    
+</body>
+</html>
